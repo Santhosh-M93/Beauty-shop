@@ -1,0 +1,750 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    height: 60px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    color: orangered;
+    font-weight: bold;
+    column-gap: 2px;
+    align-items: end;
+    position: absolute;
+    left: 6%;
+}
+
+.l {
+    font-size: 15px;
+}
+
+.f {
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    position: absolute;
+}
+
+ul li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: orange;
+    color: white;
+    padding: 9px 23px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    right: 3%;
+}
+
+.im {
+    background: url(n1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
+}
+
+.main {
+    width: 550px;
+    position: absolute;
+    left: 6%;
+    top: 15%;
+}
+
+.Wel {
+    font-size: 50px;
+    color: white;
+}
+
+.content {
+    display: flex;
+    margin-top: 35px;
+    column-gap: 30px;
+}
+
+.in {
+    cursor: pointer;
+    color: black;
+    background-color: orange;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.la {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 500px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.co {
+    height: 1px;
+    width: 850px;
+    margin-top: 9px;
+    border-top: 1px solid white;
+    border-color: white transparent transparent transparent;
+}
+
+.ce {
+    color: orange;
+    top: 700px;
+    left: 80px;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    column-gap: 20px;
+}
+
+.cd {
+    width: 70px;
+    height: 2px;
+    margin-top: 6px;
+    border-top: orange 2px solid;
+    border-color: orange transparent transparent transparent;
+}
+
+.ex {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 480px;
+    position: relative;
+    top: 70px;
+    line-height: 38px;
+    left: 180px;
+}
+
+.whole {
+    display: flex;
+    column-gap: 20px;
+}
+
+.set {
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0), rgba(20, 20, 20, 0)), url(l.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 13px;
+}
+
+.set,
+.set2,
+.set3 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.set:hover,
+.set2:hover,
+.set3:hover {
+    transform: scale(1.1);
+}
+
+
+.whole:has(.set:hover, .set2:hover, .set3:hover) .set:not(:hover),
+.whole:has(.set:hover, .set2:hover, .set3:hover) .set2:not(:hover),
+.whole:has(.set:hover, .set2:hover, .set3:hover) .set3:not(:hover) {
+    transform: scale(0.8);
+}
+
+
+.fi {
+    position: absolute;
+    top: 63%;
+    left: 15px;
+    color: white;
+}
+
+.au {
+    font-weight: bold;
+    width: 180px;
+}
+
+.au1 {
+    font-weight: bold;
+    width: 100px;
+}
+
+.be {
+    font-size: 13px;
+    width: 220px;
+    margin-top: 3px;
+}
+
+.b1 {
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.set,
+.set2,
+.set3 {
+    position: relative;
+    top: 125px;
+    left: 80px;
+    width: 380px;
+    height: 380px;
+}
+
+.set2 {
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0), rgba(20, 20, 20, 0)), url(l2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 13px;
+}
+
+.set3 {
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(l3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 13px;
+}
+
+.au2 {
+    font-weight: bold;
+    width: 120px;
+}
+
+.ou {
+    position: relative;
+    top: 180px;
+    left: 80px;
+    margin-bottom: 300px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 13px;
+}
+
+.date {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.eve {
+    display: flex;
+}
+
+.eve1 {
+    background-color: orangered;
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.eve2 {
+    background-color: lightgrey;
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 180px;
+}
+
+.our {
+    margin-bottom: 30px;
+}
+
+.cen {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.ne {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.code {
+    width: 20px;
+    height: 2px;
+    border-top: white solid 2px;
+    border-color: white transparent transparent transparent;
+
+}
+
+.be1,
+.be2 {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 8px;
+    width: 250px;
+}
+
+.be2 {
+    color: orangered;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.center1 {
+    color: orangered
+}
+
+.arrow {
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 6px;
+    padding-left: 10px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.eve1,
+.eve2 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.eve1:hover,
+.eve2:hover {
+    transform: scale(1.1);
+}
+
+.shop {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.sh {
+    margin-left: 80px;
+}
+
+.us,
+.do {
+    color: orangered;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.ab,
+.we {
+    height: 1.5px;
+    width: 35px;
+    border-top: orangered solid 1.5px;
+    border-color: orangered transparent transparent transparent;
+
+}
+
+.a,
+.what {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.wi {
+    width: 580px;
+    margin-left: 46px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.un1 {
+    width: 500px;
+    margin-left: 46px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.se {
+    margin-left: 46px;
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 45px;
+    width: 580px;
+}
+
+.gl {
+    margin-left: 46px;
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 580px;
+}
+
+.b2 {
+    margin-left: 46px;
+    background-color: orangered;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 30px;
+}
+
+.dai {
+    width: 400px;
+    height: 500px;
+    border-radius: 5%;
+    position: relative;
+    top: -55px;
+    margin-left: 155px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dai:hover {
+    transform: scale(1.1);
+}
+
+.contain {
+    display: flex;
+    background-color: khaki;
+    height: 700px;
+    margin-bottom: 100px;
+}
+
+.ph {
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.at {
+    margin-left: 46px;
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 580px;
+}
+
+.cl {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.h2 {
+    margin-left: 15px;
+}
+
+.di {
+    width: 400px;
+    margin-left: 115px;
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.play {
+    width: 400px;
+    height: 500px;
+    border-radius: 5%;
+    position: relative;
+    top: 140px;
+    margin-left: 155px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.play:hover {
+    transform: scale(1.1);
+}
+
+.cla {
+    position: relative;
+    top: 360px;
+    left: -225px;
+}
+
+.secure {
+    background-color: black;
+    color: white;
+    height: 450px;
+    display: flex;
+}
+
+.and {
+    position: relative;
+    left: 80px;
+    top: 100px;
+}
+
+.peri {
+    width: 500px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lo {
+    width: 450px;
+    font-weight: 900;
+    font-size: 11px;
+    color: gray;
+    margin-top: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pri {
+    margin-top: 40px;
+    display: flex;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pri2 {
+    display: flex;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+#pri1,
+#pri2,
+#pri3,
+#pri4,
+#pri5 {
+    display: flex;
+    align-items: center;
+}
+
+#pri11,
+#pri12,
+#pri13,
+#pri14,
+#pri15 {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+#pri2 {
+    margin-left: 50px
+}
+
+#pri3 {
+    margin-left: 20px;
+}
+
+#pri5 {
+    margin-left: 30px;
+}
+
+#pri11 {
+    background-color: lightgreen;
+}
+
+#pri12 {
+    background-color: violet;
+}
+
+#pri13 {
+    background-color: sandybrown;
+}
+
+#pri14 {
+    background-color: brown;
+}
+
+#pri15 {
+    background-color: pink;
+}
+
+.barchart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chart-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    right: -450px;
+    top: -100px
+}
+
+.chart-container svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.skin {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(j.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1140px;
+    height: 300px;
+    color: white;
+    border-radius: 20px;
+    margin-left: 110px;
+    margin-top: 50px;
+}
+
+.skin1 {
+    width: 500px;
+}
+
+.res {
+    padding-top: 60px;
+    margin-left: 40px;
+}
+
+.now {
+    cursor: pointer;
+    color: black;
+    background-color: orange;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.la1 {
+    position: relative;
+    display: flex;
+    color: white;
+    background-color: black;
+    padding-bottom: 100px;
+    width: 100vw;
+    top: 80px;
+    padding-left: 80px;
+    padding-top: 80px;
+    height: 130px;
+}
+
+.logo1 {
+    display: flex;
+    color: orangered;
+    font-weight: bold;
+    column-gap: 2px;
+    align-items: end;
+    position: absolute;
+}
+
+.form {
+    margin-left: 300px;
+    position: relative;
+    top: -20px;
+    left: -60px;
+}
+
+.td {
+    color: gray;
+}
+
+.tr {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+td {
+    padding-left: 60px;
+    padding-top: 20px;
+    cursor:pointer;
+}
+
+.sub {
+    position: relative;
+    left: 50px;
+    top: 5px
+}
+
+.ge {
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.put {
+    display: flex;
+    height: 45px;
+    margin-top: 30px;
+}
+
+.email {
+    width: 310px;
+    outline: none;
+    border-color: orangered;
+    border-width: 1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: black;
+    color:orangered;
+}
+
+.cribe {
+    margin-left: -2px;
+    background-color: orangered;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 8px 15px;
+}
+
+.email::placeholder {
+    color: orangered;
+    padding-left: 10px;
+}
